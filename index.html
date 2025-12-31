@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Chat UI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+/* Chat Box */
+.chat-box{
+    width:380px;
+    height:580px;
+    background:#000;
+    color:#fff;
+    border-radius:12px;
+    display:flex;
+    flex-direction:column;
+}
+
+/* Header */
+.chat-header{
+    padding:14px;
+    border-bottom:1px solid #262626;
+    display:flex;
+    align-items:center;
+}
+
+.dp{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    overflow:hidden;
+    margin-right:10px;
+}
+
+.dp img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.chat-header h3{
+    font-size:15px;
+}
+
+/* Chat Area */
+.chat-body{
+    flex:1;
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+}
+
+.message{
+    max-width:70%;
+    padding:10px 14px;
+    margin-bottom:10px;
+    border-radius:18px;
+    font-size:14px;
+}
+
+/* Received */
+.received{
+    background:#262626;
+    align-self:flex-start;
+}
+
+/* Sent */
+.sent{
+    background:#3797f0;
+    align-self:flex-end;
+}
+
+/* Input */
+.chat-input{
+    padding:12px;
+    border-top:1px solid #262626;
+    display:flex;
+}
+
+.chat-input input{
+    flex:1;
+    padding:10px;
+    background:#262626;
+    border:none;
+    border-radius:20px;
+    outline:none;
+    color:#fff;
+}
+
+.chat-input button{
+    margin-left:10px;
+    background:none;
+    border:none;
+    color:#3797f0;
+    font-size:14px;
+    cursor:pointer;
+}
+
+.chat-input button:hover{
+    color:#60a5fa;
+}
+</style>
+</head>
+
+<body>
+
+<div class="chat-box">
+
+    <!-- Header -->
+    <div class="chat-header">
+        <div class="dp">
+            <!-- Replace dp.jpg with any image -->
+            <img src="https://i.pravatar.cc/150?img=12" alt="Sam Alex">
+        </div>
+        <h3>Sam Alex</h3>
+    </div>
+
+    <!-- Messages -->
+    <div class="chat-body">
+        <div class="message received">dai</div>
+        <div class="message sent">sollu</div>
+        <div class="message received">gym polam va</div>
+    </div>
+
+    <!-- Input -->
+    <div class="chat-input">
+        <input type="text" placeholder="Message...">
+        <button>Send</button>
+    </div>
+
+</div>
+
+</body>
+</html>
